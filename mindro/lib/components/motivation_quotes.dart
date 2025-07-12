@@ -44,7 +44,7 @@ class _MotivationQuotesState extends State<MotivationQuotes> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(10),
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: Colors.blue[50],
         borderRadius: BorderRadius.circular(10),
@@ -57,11 +57,11 @@ class _MotivationQuotesState extends State<MotivationQuotes> {
               Text("Motivation", style: TextStyle(fontSize:10),),
               Icon(Icons.menu_book, size: 15,)
               ], ),
-          Text(currestQuote, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),),
+          Text('"$currestQuote "', style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              TextButton(onPressed: _generateQuote, child: Text("Random Quote")),
+              TextButton(onPressed: _generateQuote, child: Text("Random Quote", style: TextStyle(fontSize: 12),)),
             ],
           ),
         ],

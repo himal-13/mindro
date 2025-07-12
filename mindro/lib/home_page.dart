@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mindro/components/main_home.dart';
 import 'package:mindro/components/motivation_quotes.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,11 +15,12 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Mindro: A madicating app"),
-        elevation: 20,
       ),
       body: Column(
         children: [
-          MotivationQuotes()
+          MotivationQuotes(),
+          const SizedBox(height: 30),
+          MainHome()
         ],
       ),
 
